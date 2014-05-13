@@ -1,0 +1,38 @@
+﻿<controls:MetroWindow x:Class="Prototipo_Presidio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Principal" Height="367" Width="574" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Height="30" VerticalAlignment="Top">
+            <MenuItem x:Name="Menu_Sgp" Header="SGP">
+                <MenuItem x:Name="Menu_Sgp_GerenciarMeuUsuario" Header="Gerenciar Meu Usuario"/>
+                <MenuItem x:Name="Menu_Sgp_Estatisticas" Header="Estatísticas"/>
+                <Separator></Separator>
+                <MenuItem x:Name="Menu_Sgp_Sair" Header="Sair"/>
+            </MenuItem>
+            <MenuItem x:Name="Menu_Presidiario" Header="Presidiario">
+                <MenuItem x:Name="Menu_Presidiario_Cadastro" Header="Cadastro" Click="Menu_Presidiario_Cadastro_Click"/>
+                <MenuItem x:Name="Menu_Presidiario_FichaCriminal" Header="Ficha Criminal"/>
+                <MenuItem x:Name="Menu_Presidiario_Relatorios" Header="Relatorios"/>
+            </MenuItem>
+            <MenuItem x:Name="Menu_Funcionario" Header="Funcionario">
+                <MenuItem x:Name="Menu_Funcionario_Cadastro" Header="Cadastro"/>
+                <MenuItem x:Name="Menu_Funcionario_Relatorios" Header="Relatorios"/>
+            </MenuItem>
+            <MenuItem x:Name="Menu_Gerenciar" Header="Gerenciar">
+                <MenuItem x:Name="Menu_Gerenciar_Usuarios" Header="Usuarios"/>
+                <MenuItem x:Name="Menu_Gerenciar_Cargo" Header="Cargo"/>
+                <MenuItem x:Name="Menu_Gerenciar_Presidio" Header="Presidio"/>
+                <MenuItem x:Name="Menu_Gerenciar_Setor" Header="Setor"/>
+                <MenuItem x:Name="Menu_Gerenciar_Cela" Header="Cela"/>
+                <MenuItem x:Name="Menu_Gerenciar_Crimes" Header="Crimes"/>
+                <MenuItem x:Name="Menu_Gerenciar_Auxilios" Header="Auxilios"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</controls:MetroWindow>
