@@ -1,0 +1,37 @@
+﻿<controls:MetroWindow x:Class="Prototipo_Presidio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Principal" Height="367" Width="574" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="cadPresidiarioBtn" Content="Cadastro de Presidiario" HorizontalAlignment="Left" Margin="245,100,0,0" VerticalAlignment="Top" Width="300" Click="cadPresidiarioBtn_Click" Height="25"/>
+        <Button x:Name="cadFuncionarioBtn" Content="Cadastro de Funcionario" HorizontalAlignment="Left" Margin="245,130,0,0" VerticalAlignment="Top" Width="300" Click="cadFuncionarioBtn_Click" Height="25"/>
+        <Button x:Name="fichaPresidiarioBtn" Content="Ficha de Presidiario" HorizontalAlignment="Left" Margin="245,160,0,0" VerticalAlignment="Top" Width="300" Click="fichaPresidiarioBtn_Click" Height="25"/>
+        <Button x:Name="loginBtn" Content="Login" HorizontalAlignment="Left" Margin="245,190,0,0" VerticalAlignment="Top" Width="300" Click="loginBtn_Click" Height="25"/>
+        <Label Content="Prototipo SGP" HorizontalAlignment="Left" Margin="345,55,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Menu Height="30" VerticalAlignment="Top">
+            <MenuItem Header="Presidiario">
+                <MenuItem Header="Cadastro"/>
+                <MenuItem Header="Ficha Criminal"/>
+                <MenuItem Header="Relatorios"/>
+            </MenuItem>
+            <MenuItem Header="Funcionario">
+                <MenuItem Header="Cadastro"/>
+                <MenuItem Header="Relatorios"/>
+            </MenuItem>
+            <MenuItem Header="Gerenciar">
+                <MenuItem Header="Usuarios"/>
+                <MenuItem Header="Cargo"/>
+                <MenuItem Header="Cela"/>
+                <MenuItem Header="Setor"/>
+                <MenuItem Header="Presidio"/>
+                <MenuItem Header="Codigo de Crimes"/>
+                <MenuItem Header="Auxilios"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</controls:MetroWindow>
